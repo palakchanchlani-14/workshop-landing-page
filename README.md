@@ -12,3 +12,7 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 ## Expanding the ESLint configuration
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts).
+
+Landing page for AI & Robotics Summer Workshop 2026. 
+Frontend built with React + Vite, backend with Node.js/Express for handling enquiries. 
+Features include registration form, enquiry API, and responsive design.
