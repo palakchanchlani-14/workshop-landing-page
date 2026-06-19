@@ -1,13 +1,11 @@
 {
   "experimentalServices": {
     "frontend": {
-      "path": "./",
       "buildCommand": "npm run build",
       "outputDirectory": "dist",
       "routePrefix": "/"
     },
     "backend": {
-      "path": "backend",
       "buildCommand": "npm install",
       "outputDirectory": ".",
       "routePrefix": "/api"
