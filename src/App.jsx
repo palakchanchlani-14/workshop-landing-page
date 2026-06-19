@@ -18,7 +18,6 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validation
     if (formData.name.trim().length < 3) {
       alert("Name must be at least 3 characters");
       return;
@@ -48,7 +47,7 @@ function App() {
       const data = await response.json();
 
       if (data.success) {
-        alert("Form Submitted Successfully!");
+        alert("Registration Successful!");
 
         setFormData({
           name: "",
@@ -67,19 +66,19 @@ function App() {
   return (
     <>
       <nav className="navbar">
-        <h2>🤖 AI & Robotics Summer Workshop</h2>
+        <h2>🚀 AI & Robotics Summer Workshop 2026</h2>
       </nav>
 
       <section className="hero">
-        <h1>AI & Robotics Summer Workshop</h1>
-
+        <h1>Learn AI & Robotics Through Fun Projects</h1>
         <p className="tagline">
           Build AI Projects • Learn Robotics • Earn Certificate
         </p>
 
         <p>
-          Learn Artificial Intelligence and Robotics through fun projects,
-          coding activities, and interactive online sessions.
+          Explore Artificial Intelligence and Robotics through hands-on
+          projects, interactive coding activities, and guided learning sessions
+          designed for young innovators and future tech creators.
         </p>
 
         <a href="#register">
@@ -108,44 +107,67 @@ function App() {
 
           <div className="card">
             <h3>Fee</h3>
-            <p>₹2,999</p>
+            <p>₹2,499 Early Bird</p>
           </div>
 
           <div className="card">
             <h3>Start Date</h3>
             <p>15 July 2026</p>
           </div>
+
+          <div className="card">
+            <h3>Projects</h3>
+            <p>AI Chatbot & Smart Robot Simulation</p>
+          </div>
         </div>
       </section>
 
       <section className="outcomes">
-        <h2>Learning Outcomes</h2>
+        <h2>What Students Will Learn</h2>
 
         <ul>
-          <li>Introduction to Artificial Intelligence</li>
-          <li>Basics of Robotics</li>
-          <li>Programming Fundamentals</li>
-          <li>Robot Building Concepts</li>
-          <li>Hands-on Mini Projects</li>
+          <li>Build a Beginner-Friendly AI Chatbot</li>
+          <li>Understand Machine Learning Concepts</li>
+          <li>Create Robot Logic Simulations</li>
+          <li>Learn Problem Solving Through Coding</li>
+          <li>Work on Real-World Mini Projects</li>
+          <li>Present a Final Project with Confidence</li>
         </ul>
       </section>
 
       <section className="faq">
-        <h2>FAQs</h2>
+        <h2>Frequently Asked Questions</h2>
 
         <div className="faq-item">
           <h4>Do I need prior coding experience?</h4>
-          <p>No, the workshop is beginner friendly.</p>
+          <p>
+            No. The workshop is designed for complete beginners and students
+            who are curious about technology.
+          </p>
         </div>
 
         <div className="faq-item">
           <h4>Will sessions be recorded?</h4>
-          <p>Yes, recordings will be available.</p>
+          <p>
+            Yes. Session recordings will be shared with registered students for
+            revision and practice.
+          </p>
         </div>
 
         <div className="faq-item">
           <h4>Is a certificate provided?</h4>
-          <p>Yes, every participant receives a certificate.</p>
+          <p>
+            Yes. Every participant who completes the workshop will receive a
+            certificate of participation.
+          </p>
+        </div>
+
+        <div className="faq-item">
+          <h4>What software is required?</h4>
+          <p>
+            A laptop with internet access and Google Chrome is enough to join
+            the workshop.
+          </p>
         </div>
       </section>
 
@@ -180,9 +202,15 @@ function App() {
             required
           />
 
-          <button type="submit">Register Now 🚀</button>
+          <button type="submit">Register Now </button>
         </form>
       </section>
+
+      <footer className="footer">
+        <p>
+          © 2026 AI & Robotics Summer Workshop | Inspiring Future Innovators
+        </p>
+      </footer>
     </>
   );
 }
